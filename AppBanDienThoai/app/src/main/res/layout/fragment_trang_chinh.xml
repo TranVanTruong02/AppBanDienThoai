@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FAF8F8">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/img"
+                android:layout_marginLeft="2sp"
+                android:layout_marginTop="2sp"
+                android:layout_marginRight="2sp"/>
+            <ViewFlipper
+                android:id="@+id/viewflipper_main"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_margin="2sp"
+                android:background="@drawable/input_border_view"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="620sp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:text="Sản Phẩm Mới Nhất"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="#4EE5F8"
+                    android:gravity="center"
+                    android:layout_marginRight ="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="5sp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E8E7E7"
+                    android:padding="8sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600sp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:text="Sản Phẩm Gần Đây"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="#ED8AAC"
+                    android:gravity="center"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_main_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E8E7E7"
+                    android:padding="8sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
